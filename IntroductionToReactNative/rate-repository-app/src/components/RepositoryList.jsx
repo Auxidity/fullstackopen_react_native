@@ -32,7 +32,7 @@ const RepositoryList = () => {
     };
     return (
         <>
-            {loading && <ActivityIndicator size="lager" />}
+            {loading && <ActivityIndicator size="large" />}
             {error && <Text>Error fetching repositories: {error.message}</Text>}
             {!loading && !error && (
                 <FlatList
