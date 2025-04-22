@@ -54,7 +54,7 @@ const initialValues = {
     pw: "",
 };
 
-const SignInForm = ({ onSubmit }) => {
+export const SignInForm = ({ onSubmit }) => {
     const formik = useFormik({
         initialValues,
         validationSchema,

@@ -57,11 +57,35 @@ const AppBar = () => {
                         </Text>
                     </Link>
                 ) : (
-                    <Pressable onPress={handleSignOut}>
-                        <Text color="textSecondary" fontWeight="bold" fontSize="subheading">
-                            Sign out
-                        </Text>
-                    </Pressable>
+                    <>
+                        <Link to="/review" component={Pressable}>
+                            <Text
+                                color="textSecondary"
+                                fontWeight="bold"
+                                fontSize="subheading"
+                            >
+                                Create a review
+                            </Text>
+                        </Link>
+                        <Link to="/my-reviews" component={Pressable}>
+                            <Text
+                                color="textSecondary"
+                                fontWeight="bold"
+                                fontSize="subheading"
+                            >
+                                My reviews
+                            </Text>
+                        </Link>
+                        <Pressable onPress={handleSignOut}>
+                            <Text
+                                color="textSecondary"
+                                fontWeight="bold"
+                                fontSize="subheading"
+                            >
+                                Sign out
+                            </Text>
+                        </Pressable>
+                    </>
                 )}
             </ScrollView>
         </View>
